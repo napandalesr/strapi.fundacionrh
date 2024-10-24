@@ -15,9 +15,46 @@
     "title": {
       "type": "string"
     },
-    "blocks": {
+    "cover": {
       "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+      "components": [
+        "shared.media",
+        "shared.quote",
+        "shared.rich-text",
+        "shared.slider"
+      ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categorias": {
+      "type": "enumeration",
+      "enum": [
+        "Ambiental",
+        "Salud",
+        "Cultura",
+        "Deporte"
+      ]
     }
   }
 }
